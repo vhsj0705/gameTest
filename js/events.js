@@ -192,7 +192,7 @@ const POOL = [
 // 큰 갈림길이 없는 해에, 확률적으로 하나를 골라 줘요
 function poolEvents(L) {
   if (L.age < 2) return;
-  const hasBig = L.queue.some((d) => d.kind !== 'question');
+  const hasBig = L.queue.length > 0;
   L.flags.poolUsed = L.flags.poolUsed || {};
   const used = L.flags.poolUsed;
   const forced = POOL.filter((e) => e.once && e.id === 'toddler' && !used[e.id] && e.when(L));

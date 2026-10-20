@@ -112,7 +112,6 @@ function tick(L) {
   drift(L);
   if (L.age >= 55 && !L.retired) stageRetire(L);
   if (typeof poolEvents === 'function' && !L.dead) poolEvents(L);
-  if ([5, 15, 30, 50, 70].includes(L.age)) L.queue.push(questionFor(L));
   L.snaps.push({ age: L.age, year: L.year, happy: L.happy, health: L.health, phase: L.retired ? 'old' : L.phase !== 'none' ? 'school' : L.job ? 'work' : L.age < 7 ? 'baby' : 'free' });
   if (L.health <= 0 && !L.dead) { L.cause = '건강 악화'; die(L); }
 }
@@ -120,12 +119,10 @@ function tick(L) {
 function choose(L, decision, i) {
   const o = decision.options[i];
   const text = o.run ? o.run(L) : '';
-  if (decision.kind === 'question') return '';
   log(L, `[선택] ${o.label}${text ? ' → ' + text : ''}`, 'choice');
   return text;
 }
 function autoChoose(L, decision) {
-  if (decision.kind === 'question') return decision.options.length - 1;
   const ws = decision.options.map((o) => o.weight || 1), t = ws.reduce((a, b) => a + b, 0);
   let r = rnd() * t;
   for (let i = 0; i < ws.length; i++) { r -= ws[i]; if (r <= 0) return i; }
@@ -545,12 +542,6 @@ function illness(L) {
       return '다행히 고비를 넘겼지만 몸이 많이 상했어요.';
     }, insured ? 0.5 : 2),
   ]);
-}
-
-/* ───────── 잠시 멈춤 질문 ───────── */
-function questionFor(L) {
-  const qs = { 5: '지금 가장 좋아하는 것은 무엇인가요?', 15: '요즘 가장 마음 쓰이는 것은 무엇인가요?', 30: '지금의 나에게 가장 소중한 것은 무엇인가요?', 50: '살아오며 가장 고마웠던 사람은 누구인가요?', 70: '다시 돌아간다면 무엇을 바꾸고 싶으세요?' };
-  return D('q' + L.age, `${L.age}살, 잠시 멈춤`, qs[L.age], [O('남기고 계속하기', '', () => '', 1)], { kind: 'question' });
 }
 
 /* ───────── 기록 내보내기 (Godot 재생기가 읽는 형식) ───────── */

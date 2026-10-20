@@ -70,22 +70,20 @@ function nextDecision() {
   if (L.dead) return finish();
   if (!L.queue.length) { current = null; $('#modal').classList.add('hidden'); saveGame(); return; }
   current = L.queue.shift();
-  if ($('#auto').checked && current.kind !== 'question') { openModal(current); setTimeout(autoResolve, 700); }
-  else if ($('#auto').checked && current.kind === 'question') { current = null; nextDecision(); }
-  else openModal(current);
+  openModal(current);
+  if ($('#auto').checked) setTimeout(autoResolve, 700);
 }
 function autoResolve() { if (!current || resolving) return; pickOption(autoChoose(L, current)); }
 
 /* ───── 결정 창 ───── */
 function openModal(d) {
   resolving = false;
-  $('#mTag').textContent = d.kind === 'question' ? '잠시 멈춤' : d.history ? '시대의 사건' : '결정의 순간';
+  $('#mTag').textContent = d.history ? '시대의 사건' : '결정의 순간';
   $('#mTitle').textContent = d.title;
   $('#mBody').textContent = d.body;
   $('#mInfo').textContent = d.note ? '자료 · ' + d.note : '';
   $('#mInfo').classList.toggle('hidden', !d.note);
   $('#mResult').classList.add('hidden');
-  const note = $('#mNote'); note.value = ''; note.classList.toggle('hidden', d.kind !== 'question');
   const box = $('#mOpts'); box.innerHTML = '';
   d.options.forEach((o, i) => {
     const b = document.createElement('button'); b.className = 'opt';
@@ -101,14 +99,13 @@ function pickOption(i) {
   if (!current || resolving) return;
   resolving = true;
   const d = current;
-  if (d.kind === 'question') { const t = $('#mNote').value.trim(); if (t) { L.notes.push({ age: L.age, q: d.body, a: t }); log(L, `💭 "${t}"`, 'life'); } d.options[i].run && d.options[i].run(L); }
   let resText = '';
-  if (d.kind !== 'question') resText = choose(L, d, i);
+  resText = choose(L, d, i);
   renderAll();
   current = null;
   if (L.dead) { $('#modal').classList.add('hidden'); return finish(); }
-  const delay = d.kind === 'question' ? 0 : $('#auto').checked ? 600 : 900;
-  if (d.kind !== 'question') {
+  const delay = $('#auto').checked ? 600 : 900;
+  {
     $('#mResult').textContent = resText || '선택했어요.';
     $('#mResult').classList.remove('hidden');
     $$('#mOpts .opt').forEach((b) => { b.disabled = true; });
@@ -182,8 +179,6 @@ function finish() {
   ];
   $('#endFacts').innerHTML = rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('');
   drawCurve(); drawMap();
-  const nw = $('#notesWrap'); nw.classList.toggle('hidden', !L.notes.length);
-  $('#notes').innerHTML = L.notes.map((n) => `<li>${n.age}세 — ${esc(n.a)}</li>`).join('');
   $('#toggleAll').textContent = '전체 기록 보기'; showAll = false; renderLog('#endLog', L.log, true);
   show('end');
   Replay.start(buildRecord(L));
