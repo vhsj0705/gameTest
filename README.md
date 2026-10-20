@@ -5,6 +5,8 @@
 
 ## 실행
 
+배포 주소: https://vhsj0705.github.io/gameTest/ (GitHub Pages, main 브랜치 루트)
+
 빌드 도구가 없어요. `index.html`을 브라우저로 열면 돼요. (로컬 서버가 필요하면 `npx serve .`)
 
 ## 시대가 반영되는 부분
