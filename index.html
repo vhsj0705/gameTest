@@ -100,6 +100,13 @@
       <p class="eyebrow" id="endEyebrow"></p>
       <h1 id="endTitle"></h1>
       <p class="lead" id="endLead"></p>
+      <section id="replay" class="replay">
+        <h2>인생의 중요한 순간들 <span class="fine">기억에 남긴 ★ 순간과 큰 사건을 골라 재생해요</span></h2>
+        <div class="rStage"><canvas id="rCanvas" width="1280" height="720"></canvas><div class="rHud"><b id="rAge"></b><span id="rYear"></span></div></div>
+        <div class="rCap"><b id="rTitle"></b><small id="rChoice"></small><p id="rText"></p></div>
+        <div id="rTimeline" class="rTl"></div>
+        <div class="rCtl"><button id="rPlay" class="btn small">⏸</button><button id="rPrev" class="btn small">◀</button><button id="rNext" class="btn small">▶</button><span id="rSpeed"><button class="btn small on" data-s="1">1×</button><button class="btn small" data-s="2">2×</button><button class="btn small" data-s="4">4×</button></span><button id="rAgain" class="btn small ghost">처음부터</button></div>
+      </section>
       <div class="grid2">
         <div><h2>이 삶의 숫자</h2><dl id="endFacts"></dl></div>
         <div><h2>같은 해 태어난 사람들과 비교</h2><div id="curve"></div><p class="fine" id="curveNote"></p></div>
@@ -123,6 +130,7 @@
 <script src="js/mortality.js"></script>
 <script src="js/data.js"></script>
 <script src="js/game.js"></script>
+<script src="js/replay.js"></script>
 <script src="js/ui.js"></script>
 </body>
 </html>

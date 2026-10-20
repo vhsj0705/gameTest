@@ -21,6 +21,7 @@ function readStart() {
   return { year, secPerYear: parseInt($('#lifeLen').value, 10) / 80 };
 }
 function begin(life) {
+  Replay.stop();
   L = life; speed = 1; progress = 0; running = true; current = null; resolving = false;
   $$('#speedBtns .btn').forEach((b) => b.classList.toggle('on', b.dataset.s === '1'));
   $('#btnPause').textContent = '⏸';
@@ -183,10 +184,11 @@ function finish() {
   $('#notes').innerHTML = L.notes.map((n) => `<li>${n.age}세 — ${esc(n.a)}</li>`).join('');
   $('#toggleAll').textContent = '전체 기록 보기'; showAll = false; renderLog('#endLog', L.log, true);
   show('end');
+  Replay.start(buildRecord(L));
 }
 let showAll = false;
 $('#toggleAll').addEventListener('click', () => { showAll = !showAll; $('#toggleAll').textContent = showAll ? '남긴 순간만 보기' : '전체 기록 보기'; renderLog('#endLog', L.log, !showAll); });
-$('#btnAgain').addEventListener('click', () => { show('start'); });
+$('#btnAgain').addEventListener('click', () => { Replay.stop(); show('start'); });
 $('#btnShare').addEventListener('click', () => {
   const t = `[5천만 분의 1] ${L.birthYear}년 ${L.rural ? L.region + ' 농어촌' : L.region}에서 ${L.sex === 'M' ? '남자' : '여자'}로 태어나 ${L.age}세에 ${L.cause}(으)로 생을 마쳤어요. (${EDU_NAMES[L.edu]}, 평생 평균 행복 ${Math.round(L.snaps.reduce((a, s) => a + s.happy, 0) / L.snaps.length)})`;
   (navigator.clipboard ? navigator.clipboard.writeText(t) : Promise.reject()).then(() => toast('복사했어요'), () => toast('복사하지 못했어요'));
