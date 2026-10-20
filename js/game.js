@@ -56,6 +56,7 @@ function newLife(opts = {}) {
     partner: 'none', spouseAge: 0, kids: [], wantKids: 0, house: null, retired: false, pensionYears: 0,
     focus: 'balance', flags: {}, log: [], notes: [], snaps: [], queue: [], dead: false, cause: '', secPerYear: opts.secPerYear || 45,
     exempt: rnd() < 0.06, debtStress: 0,
+    siblings: Math.max(0, Math.round(interp(TFR_KNOTS, year) - 1 + (rnd() - 0.5) * 1.5)),
   };
   const era = ERA_NOTES.find((e) => year >= e[0] && year <= e[1]);
   const where = rural ? `${region.n} 시골 마을` : `${region.n}`;
@@ -110,6 +111,7 @@ function tick(L) {
   economy(L);
   drift(L);
   if (L.age >= 55 && !L.retired) stageRetire(L);
+  if (typeof poolEvents === 'function' && !L.dead) poolEvents(L);
   if ([5, 15, 30, 50, 70].includes(L.age)) L.queue.push(questionFor(L));
   L.snaps.push({ age: L.age, year: L.year, happy: L.happy, health: L.health, phase: L.retired ? 'old' : L.phase !== 'none' ? 'school' : L.job ? 'work' : L.age < 7 ? 'baby' : 'free' });
   if (L.health <= 0 && !L.dead) { L.cause = '건강 악화'; die(L); }

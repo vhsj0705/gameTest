@@ -82,6 +82,8 @@ function openModal(d) {
   $('#mTag').textContent = d.kind === 'question' ? '잠시 멈춤' : d.history ? '시대의 사건' : '결정의 순간';
   $('#mTitle').textContent = d.title;
   $('#mBody').textContent = d.body;
+  $('#mInfo').textContent = d.note ? '자료 · ' + d.note : '';
+  $('#mInfo').classList.toggle('hidden', !d.note);
   $('#mResult').classList.add('hidden');
   const note = $('#mNote'); note.value = ''; note.classList.toggle('hidden', d.kind !== 'question');
   const box = $('#mOpts'); box.innerHTML = '';

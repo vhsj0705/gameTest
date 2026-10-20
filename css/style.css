@@ -113,3 +113,5 @@ textarea { margin-top: 14px; resize: vertical; }
 .rTl div i { position: absolute; inset: 0 auto 0 0; width: 0; background: var(--c); }
 .rTl div.now { outline: 2px solid var(--text); outline-offset: 1px; }
 .rCtl { display: flex; gap: 6px; align-items: center; margin-top: 10px; flex-wrap: wrap; } .rCtl #rSpeed { display: flex; gap: 4px; margin-left: 6px; }
+
+.sheet .note { background: var(--bg2); border-left: 3px solid var(--accent2); border-radius: 8px; padding: 8px 12px; font-size: 13px !important; color: var(--muted); }
