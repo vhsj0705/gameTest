@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5천만 분의 1 — 대한민국 인생 시뮬레이터</title>
+<meta name="description" content="한국 현대사 속에서 무작위로 태어나 한 사람의 일생을 살아 보는 인생 시뮬레이션">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- 시작 화면 -->
+  <section id="start" class="screen">
+    <div class="card hero">
+      <p class="eyebrow">대한민국 인생 시뮬레이터</p>
+      <h1>5천만 분의 1</h1>
+      <p class="lead">한 번뿐인 삶을 대한민국 어딘가에서 무작위로 시작해요.<br>태어난 해, 고향, 집안, 성별은 고를 수 없어요. 그 시대의 실제 통계와 역사가 당신의 선택지를 바꿔요.</p>
+
+      <div class="form">
+        <label>태어날 해
+          <select id="yearMode">
+            <option value="random">아무 해 (그해 출생아 수에 비례)</option>
+            <option value="past">지난 세상 (1940~1979)</option>
+            <option value="now">지금 세상 (1980~2025)</option>
+            <option value="pick">직접 고르기</option>
+          </select>
+        </label>
+        <label id="yearPickWrap" class="hidden">연도
+          <input id="yearPick" type="number" min="1940" max="2025" value="1970">
+        </label>
+        <label>인생 길이
+          <select id="lifeLen">
+            <option value="300">약 5분 (빠르게 맛보기)</option>
+            <option value="1800" selected>약 30분</option>
+            <option value="3600">약 1시간</option>
+            <option value="5400">약 1시간 30분</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="btnBirth" class="btn primary">태어나기</button>
+        <button id="btnContinue" class="btn hidden">이어하기</button>
+      </div>
+      <p class="fine">실제 통계(통계청 생명표·교육부·한국은행 등의 공개 자료)의 추세를 근사해 만들었어요. 일부 수치는 대략적이며, 미래(2026년 이후)는 통계청 장래인구추계를 참고한 가상의 전망이에요. 자세한 출처는 README를 참고하세요.</p>
+    </div>
+  </section>
+
+  <!-- 플레이 화면 -->
+  <section id="play" class="screen hidden">
+    <header class="bar">
+      <div class="who"><strong id="barAge">0세</strong><span id="barYear">1970년</span><span id="barWhere"></span></div>
+      <div class="controls">
+        <button id="btnPause" class="btn small" title="일시정지">⏸</button>
+        <div class="speed" id="speedBtns">
+          <button data-s="1" class="btn small on">1×</button><button data-s="2" class="btn small">2×</button><button data-s="4" class="btn small">4×</button><button data-s="8" class="btn small">8×</button><button data-s="16" class="btn small">16×</button>
+        </div>
+        <label class="chk"><input type="checkbox" id="auto"> 자동 결정</label>
+        <button id="btnQuit" class="btn small ghost">처음으로</button>
+      </div>
+      <div class="progress" aria-hidden="true"><i id="yearBar"></i></div>
+    </header>
+
+    <div class="layout">
+      <aside class="panel">
+        <h2>지금의 나</h2>
+        <div class="stat" data-k="health"><span>건강</span><div class="meter"><i></i></div><b>0</b></div>
+        <div class="stat" data-k="happy"><span>행복</span><div class="meter"><i></i></div><b>0</b></div>
+        <div class="stat" data-k="know"><span>지식</span><div class="meter"><i></i></div><b>0</b></div>
+        <div class="stat" data-k="rel"><span>관계</span><div class="meter"><i></i></div><b>0</b></div>
+        <dl id="facts"></dl>
+        <h2>올해의 초점</h2>
+        <div id="focus" class="focus"></div>
+        <p class="fine" id="focusNote"></p>
+      </aside>
+
+      <main class="main">
+        <div class="era" id="era"></div>
+        <div class="logHead"><h2>인생 기록</h2><span class="fine">☆를 눌러 기억에 남기기</span></div>
+        <ol id="log" class="log"></ol>
+      </main>
+    </div>
+
+    <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+      <div class="sheet">
+        <p class="tag" id="mTag"></p>
+        <h3 id="mTitle"></h3>
+        <p id="mBody"></p>
+        <textarea id="mNote" class="hidden" rows="3" maxlength="140" placeholder="짧은 생각을 남겨 보세요 (선택)"></textarea>
+        <div id="mOpts" class="opts"></div>
+        <p id="mResult" class="result hidden"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 결과 화면 -->
+  <section id="end" class="screen hidden">
+    <div class="card wide">
+      <p class="eyebrow" id="endEyebrow"></p>
+      <h1 id="endTitle"></h1>
+      <p class="lead" id="endLead"></p>
+      <div class="grid2">
+        <div><h2>이 삶의 숫자</h2><dl id="endFacts"></dl></div>
+        <div><h2>같은 해 태어난 사람들과 비교</h2><div id="curve"></div><p class="fine" id="curveNote"></p></div>
+      </div>
+      <h2>인생 지도 <span class="fine">한 칸이 1년이에요 · 색은 행복 수준</span></h2>
+      <div id="lifeMap" class="lifemap"></div>
+      <div class="legend" id="mapLegend"></div>
+      <div id="notesWrap" class="hidden"><h2>잠시 멈춤에 남긴 말</h2><ul id="notes" class="notes"></ul></div>
+      <h2>기억에 남긴 순간 <button class="btn small ghost" id="toggleAll">전체 기록 보기</button></h2>
+      <ol id="endLog" class="log"></ol>
+      <div class="actions">
+        <button id="btnExport" class="btn">Godot 재생용 기록 저장</button>
+        <button id="btnShare" class="btn">결과 복사</button>
+        <button id="btnAgain" class="btn primary">다시 태어나기</button>
+      </div>
+    </div>
+  </section>
+</div>
+<div id="toast" class="toast hidden"></div>
+
+<script src="js/mortality.js"></script>
+<script src="js/data.js"></script>
+<script src="js/game.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

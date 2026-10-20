@@ -1,0 +1,1213 @@
+{
+ "version": 1,
+ "meta": {
+  "birthYear": 1968,
+  "sex": "M",
+  "region": "부산",
+  "rural": false,
+  "tier": 2,
+  "tierName": "넉넉지 않은 집",
+  "age": 80,
+  "year": 2048,
+  "cause": "큰 병",
+  "edu": "고등학교 졸업",
+  "partner": "married",
+  "kids": 2,
+  "house": true,
+  "netWorth": 29481
+ },
+ "log": [
+  {
+   "age": 0,
+   "year": 1968,
+   "text": "이 해에 태어난 한국인의 평균 기대수명은 약 61세예요.",
+   "kind": "info",
+   "fav": false
+  },
+  {
+   "age": 0,
+   "year": 1968,
+   "text": "1968년, 경남 시골 마을의 넉넉지 않은 집에서 남자아이로 태어났어요. 경제개발이 시작됐어요. 산아제한이 한창이고, 가난하지만 모두가 열심히 일하는 때예요.",
+   "kind": "birth",
+   "fav": false
+  },
+  {
+   "age": 1,
+   "year": 1969,
+   "text": "📰 1969년 — 서울에서 중학교 무시험 진학이 시작돼요. 입시 지옥이 조금 줄어요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 2,
+   "year": 1970,
+   "text": "📰 1970년 — 경부고속도로가 개통되고 새마을운동이 시작돼요. 전태일이 노동 현실을 알리며 분신해요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 4,
+   "year": 1972,
+   "text": "📰 1972년 — 10월 유신이 선포돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 5,
+   "year": 1973,
+   "text": "📰 1973년 — 오일쇼크로 물가가 크게 올라요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 6,
+   "year": 1974,
+   "text": "📰 1974년 — 서울 지하철 1호선이 개통되고 고교 평준화가 시작돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 7,
+   "year": 1975,
+   "text": "초등학교에 입학했어요.",
+   "kind": "school",
+   "fav": false
+  },
+  {
+   "age": 9,
+   "year": 1977,
+   "text": "📰 1977년 — 수출 100억 달러를 달성해요. 의료보험이 시작돼요(500인 이상 사업장부터).",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 10,
+   "year": 1978,
+   "text": "[선택] 병원에서 치료받는다 → 치료를 받고 시간이 지나며 회복했어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 11,
+   "year": 1979,
+   "text": "📰 1979년 — 10·26 사건으로 박정희 대통령이 숨지고 정국이 크게 흔들려요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 12,
+   "year": 1980,
+   "text": "📰 1980년 — 5·18 광주민주화운동. 과외가 금지되고 컬러TV 방송이 시작돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 12,
+   "year": 1980,
+   "text": "좋은 친구를 만나 마음이 든든해졌어요.",
+   "kind": "life",
+   "fav": true
+  },
+  {
+   "age": 13,
+   "year": 1981,
+   "text": "📰 1981년 — 서울이 1988년 올림픽 개최지로 결정돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 13,
+   "year": 1981,
+   "text": "[선택] 중학교에 간다 → 부모님이 어렵게 학비를 마련해 주셨어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 14,
+   "year": 1982,
+   "text": "📰 1982년 — 야간통행금지가 풀리고 프로야구가 출범해요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 15,
+   "year": 1983,
+   "text": "📰 1983년 — KBS 이산가족 찾기 방송이 온 나라를 울려요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 16,
+   "year": 1984,
+   "text": "새로운 취미를 발견해 일상이 즐거워졌어요.",
+   "kind": "life",
+   "fav": true
+  },
+  {
+   "age": 16,
+   "year": 1984,
+   "text": "[선택] 인문계 고등학교 → 대학 입시를 향해 달려요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 17,
+   "year": 1985,
+   "text": "[선택] 도시로 올라간다 → 부산으로 올라왔어요. 낯설지만 일자리가 있어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 19,
+   "year": 1987,
+   "text": "📰 1987년 — 6월 민주항쟁. 대통령 직선제로 헌법이 바뀌어요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 19,
+   "year": 1987,
+   "text": "[선택] 거리로 나간다 → 시청 앞 광장에서 목이 쉴 때까지 외쳤어요. 직선제 개헌이 이뤄졌어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 19,
+   "year": 1987,
+   "text": "[선택] 4년제 대학에 도전 → 아쉽게 떨어졌어요. 재수를 해야 할지 고민이에요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 20,
+   "year": 1988,
+   "text": "📰 1988년 — 서울올림픽이 열리고 국민연금이 시작돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 20,
+   "year": 1988,
+   "text": "군에 입대했어요. 복무 기간은 약 29개월이에요.",
+   "kind": "life",
+   "fav": false
+  },
+  {
+   "age": 20,
+   "year": 1988,
+   "text": "[선택] 포기하고 일한다 → 취업 시장으로 나가요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 21,
+   "year": 1989,
+   "text": "📰 1989년 — 해외여행이 자유화되고 전 국민 의료보험이 시작돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 21,
+   "year": 1989,
+   "text": "중소기업 직원(으)로 일하게 됐어요.",
+   "kind": "work",
+   "fav": false
+  },
+  {
+   "age": 21,
+   "year": 1989,
+   "text": "[선택] 중소기업에 들어간다 → 중소기업 직원(으)로 일하게 됐어요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 23,
+   "year": 1991,
+   "text": "📰 1991년 — 남북한이 유엔에 동시 가입해요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 24,
+   "year": 1992,
+   "text": "[선택] 일과 나에게 집중한다 → 지금은 연애보다 내 삶이 먼저예요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 25,
+   "year": 1993,
+   "text": "📰 1993년 — 금융실명제가 실시돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 26,
+   "year": 1994,
+   "text": "📰 1994년 — 성수대교가 무너져요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 27,
+   "year": 1995,
+   "text": "📰 1995년 — 삼풍백화점이 무너지고, 지방자치 선거가 시작돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 27,
+   "year": 1995,
+   "text": "좋은 친구를 만나 마음이 든든해졌어요.",
+   "kind": "life",
+   "fav": true
+  },
+  {
+   "age": 28,
+   "year": 1996,
+   "text": "📰 1996년 — 대한민국이 OECD에 가입해요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 29,
+   "year": 1997,
+   "text": "📰 1997년 — 외환위기. IMF 구제금융을 신청해요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 29,
+   "year": 1997,
+   "text": "[선택] 적극적으로 만난다 → 설레는 연애가 시작됐어요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 30,
+   "year": 1998,
+   "text": "📰 1998년 — 금 모으기 운동과 대규모 구조조정. 실업자가 크게 늘어요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 30,
+   "year": 1998,
+   "text": "[선택] 금반지를 낸다 → 돌 반지와 결혼반지를 내놓고 마음이 뭉클했어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 30,
+   "year": 1998,
+   "text": "[선택] 연애만 이어간다 → 당분간은 지금 관계를 이어가기로 했어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 31,
+   "year": 1999,
+   "text": "📰 1999년 — 벤처 붐이 일어요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 32,
+   "year": 2000,
+   "text": "📰 2000년 — 남북 정상회담(6·15)이 열리고 의약분업이 시작돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 32,
+   "year": 2000,
+   "text": "[선택] 결혼한다 → 결혼식을 올리고 새 가정을 꾸렸어요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 33,
+   "year": 2001,
+   "text": "📰 2001년 — 초고속 인터넷이 빠르게 퍼져요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 33,
+   "year": 2001,
+   "text": "아이가 태어났어요. (1번째)",
+   "kind": "life",
+   "fav": false
+  },
+  {
+   "age": 33,
+   "year": 2001,
+   "text": "[선택] 아이를 갖는다 → 아이가 태어났어요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 33,
+   "year": 2001,
+   "text": "[선택] 대출을 받아 집을 산다 → 드디어 내 집을 마련했어요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 34,
+   "year": 2002,
+   "text": "📰 2002년 — 한일 월드컵 4강. 온 나라가 거리로 나와 응원해요. 12월 로또가 시작돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 35,
+   "year": 2003,
+   "text": "📰 2003년 — 대구 지하철 화재. 카드 대란으로 신용불량자가 늘어요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 36,
+   "year": 2004,
+   "text": "📰 2004년 — 주5일 근무제가 단계적으로 도입돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 37,
+   "year": 2005,
+   "text": "성과를 인정받아 승진하고 월급이 올랐어요.",
+   "kind": "good",
+   "fav": false
+  },
+  {
+   "age": 39,
+   "year": 2007,
+   "text": "📰 2007년 — 1인당 국민소득이 2만 달러를 넘어요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 40,
+   "year": 2008,
+   "text": "📰 2008년 — 미국발 금융위기가 닥치고 광우병 촛불집회가 열려요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 40,
+   "year": 2008,
+   "text": "아이가 태어났어요. (2번째)",
+   "kind": "life",
+   "fav": false
+  },
+  {
+   "age": 40,
+   "year": 2008,
+   "text": "[선택] 지켜본다 → 뉴스로 소식을 지켜봤어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 40,
+   "year": 2008,
+   "text": "[선택] 학원에 보낸다 → 학원비가 부담이지만 아이를 응원해요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 41,
+   "year": 2009,
+   "text": "📰 2009년 — 신종 플루가 유행하고 스마트폰이 도입돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 41,
+   "year": 2009,
+   "text": "[선택] 민간요법으로 버틴다 → 다행히 고비를 넘겼지만 몸이 많이 상했어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 42,
+   "year": 2010,
+   "text": "📰 2010년 — 천안함 사건과 연평도 포격이 있었어요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 42,
+   "year": 2010,
+   "text": "좋은 친구를 만나 마음이 든든해졌어요.",
+   "kind": "life",
+   "fav": false
+  },
+  {
+   "age": 45,
+   "year": 2013,
+   "text": "교통사고를 당해 크게 다쳤어요.",
+   "kind": "bad",
+   "fav": true
+  },
+  {
+   "age": 46,
+   "year": 2014,
+   "text": "📰 2014년 — 세월호 참사. 기초연금이 시작돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 47,
+   "year": 2015,
+   "text": "📰 2015년 — 메르스가 유행해요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 47,
+   "year": 2015,
+   "text": "부모님이 세상을 떠나셨어요.",
+   "kind": "bad",
+   "fav": true
+  },
+  {
+   "age": 47,
+   "year": 2015,
+   "text": "좋은 친구를 만나 마음이 든든해졌어요.",
+   "kind": "life",
+   "fav": true
+  },
+  {
+   "age": 47,
+   "year": 2015,
+   "text": "[선택] 학원에 보낸다 → 학원비가 부담이지만 아이를 응원해요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 48,
+   "year": 2016,
+   "text": "📰 2016년 — 촛불집회가 이어져요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 49,
+   "year": 2017,
+   "text": "📰 2017년 — 대통령 탄핵이 인용되고 조기 대선이 치러져요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 50,
+   "year": 2018,
+   "text": "📰 2018년 — 평창 동계올림픽이 열리고 최저임금이 크게 올라요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 52,
+   "year": 2020,
+   "text": "📰 2020년 — 코로나19가 번져요. 사망자가 출생아보다 많아져 인구가 줄기 시작해요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 53,
+   "year": 2021,
+   "text": "📰 2021년 — 집값·주식·코인이 급등해요. \"영끌\" 열풍이 불어요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 53,
+   "year": 2021,
+   "text": "[선택] 병원에서 치료받는다 → 치료를 받고 시간이 지나며 회복했어요.",
+   "kind": "choice",
+   "fav": true
+  },
+  {
+   "age": 54,
+   "year": 2022,
+   "text": "📰 2022년 — 이태원 참사. 금리가 가파르게 올라 대출 이자 부담이 커져요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 55,
+   "year": 2023,
+   "text": "📰 2023년 — 합계출산율 0.72명. 세계에서 가장 낮은 수준이에요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 56,
+   "year": 2024,
+   "text": "📰 2024년 — 65세 이상 인구가 20%를 넘어 초고령사회가 돼요. 12월 3일 비상계엄이 선포됐다가 해제돼요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 57,
+   "year": 2025,
+   "text": "📰 2025년 — 헌법재판소가 대통령 탄핵을 인용하고 6월 조기 대선이 치러져요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 59,
+   "year": 2027,
+   "text": "[선택] 병원에서 치료받는다 → 치료를 받고 시간이 지나며 회복했어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 60,
+   "year": 2028,
+   "text": "[선택] 퇴직하고 쉰다 → 긴 직장 생활을 마쳤어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 62,
+   "year": 2030,
+   "text": "📰 2030년 — [예상] 통계청 전망: 65세 이상이 인구의 4분의 1에 가까워져요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 63,
+   "year": 2031,
+   "text": "자녀가 가정을 꾸리고 독립했어요.",
+   "kind": "life",
+   "fav": true
+  },
+  {
+   "age": 69,
+   "year": 2037,
+   "text": "새로운 취미를 발견해 일상이 즐거워졌어요.",
+   "kind": "life",
+   "fav": false
+  },
+  {
+   "age": 70,
+   "year": 2038,
+   "text": "자녀가 가정을 꾸리고 독립했어요.",
+   "kind": "life",
+   "fav": true
+  },
+  {
+   "age": 72,
+   "year": 2040,
+   "text": "📰 2040년 — [예상] 통계청 전망: 생산연령인구가 크게 줄고 총인구는 5천만 명 아래로 내려가요.",
+   "kind": "news",
+   "fav": false
+  },
+  {
+   "age": 78,
+   "year": 2046,
+   "text": "[선택] 병원에서 치료받는다 → 치료를 받고 시간이 지나며 회복했어요.",
+   "kind": "choice",
+   "fav": false
+  },
+  {
+   "age": 80,
+   "year": 2048,
+   "text": "80세에 큰 병(으)로 세상을 떠났어요.",
+   "kind": "death",
+   "fav": false
+  },
+  {
+   "age": 80,
+   "year": 2048,
+   "text": "[선택] 민간요법으로 버틴다 → 병이 깊어져 끝내 이겨내지 못했어요.",
+   "kind": "choice",
+   "fav": false
+  }
+ ],
+ "snaps": [
+  {
+   "age": 0,
+   "year": 1968,
+   "happy": 55,
+   "health": 60,
+   "phase": "baby"
+  },
+  {
+   "age": 1,
+   "year": 1969,
+   "happy": 56,
+   "health": 62,
+   "phase": "baby"
+  },
+  {
+   "age": 2,
+   "year": 1970,
+   "happy": 54,
+   "health": 62,
+   "phase": "baby"
+  },
+  {
+   "age": 3,
+   "year": 1971,
+   "happy": 56,
+   "health": 61,
+   "phase": "baby"
+  },
+  {
+   "age": 4,
+   "year": 1972,
+   "happy": 58,
+   "health": 61,
+   "phase": "baby"
+  },
+  {
+   "age": 5,
+   "year": 1973,
+   "happy": 57,
+   "health": 60,
+   "phase": "baby"
+  },
+  {
+   "age": 6,
+   "year": 1974,
+   "happy": 56,
+   "health": 60,
+   "phase": "baby"
+  },
+  {
+   "age": 7,
+   "year": 1975,
+   "happy": 56,
+   "health": 60,
+   "phase": "school"
+  },
+  {
+   "age": 8,
+   "year": 1976,
+   "happy": 56,
+   "health": 60,
+   "phase": "school"
+  },
+  {
+   "age": 9,
+   "year": 1977,
+   "happy": 56,
+   "health": 59,
+   "phase": "school"
+  },
+  {
+   "age": 10,
+   "year": 1978,
+   "happy": 55,
+   "health": 59,
+   "phase": "school"
+  },
+  {
+   "age": 11,
+   "year": 1979,
+   "happy": 52,
+   "health": 53,
+   "phase": "school"
+  },
+  {
+   "age": 12,
+   "year": 1980,
+   "happy": 53,
+   "health": 54,
+   "phase": "school"
+  },
+  {
+   "age": 13,
+   "year": 1981,
+   "happy": 51,
+   "health": 55,
+   "phase": "free"
+  },
+  {
+   "age": 14,
+   "year": 1982,
+   "happy": 48,
+   "health": 56,
+   "phase": "school"
+  },
+  {
+   "age": 15,
+   "year": 1983,
+   "happy": 46,
+   "health": 56,
+   "phase": "school"
+  },
+  {
+   "age": 16,
+   "year": 1984,
+   "happy": 49,
+   "health": 55,
+   "phase": "free"
+  },
+  {
+   "age": 17,
+   "year": 1985,
+   "happy": 50,
+   "health": 57,
+   "phase": "school"
+  },
+  {
+   "age": 18,
+   "year": 1986,
+   "happy": 50,
+   "health": 57,
+   "phase": "school"
+  },
+  {
+   "age": 19,
+   "year": 1987,
+   "happy": 50,
+   "health": 57,
+   "phase": "free"
+  },
+  {
+   "age": 20,
+   "year": 1988,
+   "happy": 44,
+   "health": 57,
+   "phase": "free"
+  },
+  {
+   "age": 21,
+   "year": 1989,
+   "happy": 44,
+   "health": 59,
+   "phase": "free"
+  },
+  {
+   "age": 22,
+   "year": 1990,
+   "happy": 47,
+   "health": 60,
+   "phase": "work"
+  },
+  {
+   "age": 23,
+   "year": 1991,
+   "happy": 52,
+   "health": 60,
+   "phase": "work"
+  },
+  {
+   "age": 24,
+   "year": 1992,
+   "happy": 55,
+   "health": 62,
+   "phase": "work"
+  },
+  {
+   "age": 25,
+   "year": 1993,
+   "happy": 55,
+   "health": 62,
+   "phase": "work"
+  },
+  {
+   "age": 26,
+   "year": 1994,
+   "happy": 57,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 27,
+   "year": 1995,
+   "happy": 58,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 28,
+   "year": 1996,
+   "happy": 58,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 29,
+   "year": 1997,
+   "happy": 55,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 30,
+   "year": 1998,
+   "happy": 60,
+   "health": 62,
+   "phase": "work"
+  },
+  {
+   "age": 31,
+   "year": 1999,
+   "happy": 65,
+   "health": 64,
+   "phase": "work"
+  },
+  {
+   "age": 32,
+   "year": 2000,
+   "happy": 63,
+   "health": 64,
+   "phase": "work"
+  },
+  {
+   "age": 33,
+   "year": 2001,
+   "happy": 70,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 34,
+   "year": 2002,
+   "happy": 79,
+   "health": 62,
+   "phase": "work"
+  },
+  {
+   "age": 35,
+   "year": 2003,
+   "happy": 74,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 36,
+   "year": 2004,
+   "happy": 73,
+   "health": 64,
+   "phase": "work"
+  },
+  {
+   "age": 37,
+   "year": 2005,
+   "happy": 73,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 38,
+   "year": 2006,
+   "happy": 74,
+   "health": 64,
+   "phase": "work"
+  },
+  {
+   "age": 39,
+   "year": 2007,
+   "happy": 71,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 40,
+   "year": 2008,
+   "happy": 73,
+   "health": 63,
+   "phase": "work"
+  },
+  {
+   "age": 41,
+   "year": 2009,
+   "happy": 74,
+   "health": 62,
+   "phase": "work"
+  },
+  {
+   "age": 42,
+   "year": 2010,
+   "happy": 72,
+   "health": 51,
+   "phase": "work"
+  },
+  {
+   "age": 43,
+   "year": 2011,
+   "happy": 72,
+   "health": 52,
+   "phase": "work"
+  },
+  {
+   "age": 44,
+   "year": 2012,
+   "happy": 73,
+   "health": 51,
+   "phase": "work"
+  },
+  {
+   "age": 45,
+   "year": 2013,
+   "happy": 70,
+   "health": 37,
+   "phase": "work"
+  },
+  {
+   "age": 46,
+   "year": 2014,
+   "happy": 68,
+   "health": 38,
+   "phase": "work"
+  },
+  {
+   "age": 47,
+   "year": 2015,
+   "happy": 65,
+   "health": 39,
+   "phase": "work"
+  },
+  {
+   "age": 48,
+   "year": 2016,
+   "happy": 68,
+   "health": 41,
+   "phase": "work"
+  },
+  {
+   "age": 49,
+   "year": 2017,
+   "happy": 69,
+   "health": 42,
+   "phase": "work"
+  },
+  {
+   "age": 50,
+   "year": 2018,
+   "happy": 72,
+   "health": 41,
+   "phase": "work"
+  },
+  {
+   "age": 51,
+   "year": 2019,
+   "happy": 73,
+   "health": 41,
+   "phase": "work"
+  },
+  {
+   "age": 52,
+   "year": 2020,
+   "happy": 70,
+   "health": 40,
+   "phase": "work"
+  },
+  {
+   "age": 53,
+   "year": 2021,
+   "happy": 72,
+   "health": 39,
+   "phase": "work"
+  },
+  {
+   "age": 54,
+   "year": 2022,
+   "happy": 70,
+   "health": 31,
+   "phase": "work"
+  },
+  {
+   "age": 55,
+   "year": 2023,
+   "happy": 70,
+   "health": 31,
+   "phase": "work"
+  },
+  {
+   "age": 56,
+   "year": 2024,
+   "happy": 66,
+   "health": 30,
+   "phase": "work"
+  },
+  {
+   "age": 57,
+   "year": 2025,
+   "happy": 68,
+   "health": 31,
+   "phase": "work"
+  },
+  {
+   "age": 58,
+   "year": 2026,
+   "happy": 69,
+   "health": 30,
+   "phase": "work"
+  },
+  {
+   "age": 59,
+   "year": 2027,
+   "happy": 70,
+   "health": 29,
+   "phase": "work"
+  },
+  {
+   "age": 60,
+   "year": 2028,
+   "happy": 70,
+   "health": 22,
+   "phase": "work"
+  },
+  {
+   "age": 61,
+   "year": 2029,
+   "happy": 67,
+   "health": 23,
+   "phase": "old"
+  },
+  {
+   "age": 62,
+   "year": 2030,
+   "happy": 63,
+   "health": 23,
+   "phase": "old"
+  },
+  {
+   "age": 63,
+   "year": 2031,
+   "happy": 64,
+   "health": 23,
+   "phase": "old"
+  },
+  {
+   "age": 64,
+   "year": 2032,
+   "happy": 61,
+   "health": 21,
+   "phase": "old"
+  },
+  {
+   "age": 65,
+   "year": 2033,
+   "happy": 62,
+   "health": 21,
+   "phase": "old"
+  },
+  {
+   "age": 66,
+   "year": 2034,
+   "happy": 62,
+   "health": 22,
+   "phase": "old"
+  },
+  {
+   "age": 67,
+   "year": 2035,
+   "happy": 62,
+   "health": 21,
+   "phase": "old"
+  },
+  {
+   "age": 68,
+   "year": 2036,
+   "happy": 60,
+   "health": 20,
+   "phase": "old"
+  },
+  {
+   "age": 69,
+   "year": 2037,
+   "happy": 62,
+   "health": 19,
+   "phase": "old"
+  },
+  {
+   "age": 70,
+   "year": 2038,
+   "happy": 62,
+   "health": 20,
+   "phase": "old"
+  },
+  {
+   "age": 71,
+   "year": 2039,
+   "happy": 63,
+   "health": 19,
+   "phase": "old"
+  },
+  {
+   "age": 72,
+   "year": 2040,
+   "happy": 61,
+   "health": 19,
+   "phase": "old"
+  },
+  {
+   "age": 73,
+   "year": 2041,
+   "happy": 62,
+   "health": 18,
+   "phase": "old"
+  },
+  {
+   "age": 74,
+   "year": 2042,
+   "happy": 59,
+   "health": 19,
+   "phase": "old"
+  },
+  {
+   "age": 75,
+   "year": 2043,
+   "happy": 59,
+   "health": 20,
+   "phase": "old"
+  },
+  {
+   "age": 76,
+   "year": 2044,
+   "happy": 59,
+   "health": 19,
+   "phase": "old"
+  },
+  {
+   "age": 77,
+   "year": 2045,
+   "happy": 59,
+   "health": 19,
+   "phase": "old"
+  },
+  {
+   "age": 78,
+   "year": 2046,
+   "happy": 60,
+   "health": 17,
+   "phase": "old"
+  },
+  {
+   "age": 79,
+   "year": 2047,
+   "happy": 60,
+   "health": 11,
+   "phase": "old"
+  },
+  {
+   "age": 80,
+   "year": 2048,
+   "happy": 58,
+   "health": 12,
+   "phase": "old"
+  },
+  {
+   "age": 80,
+   "year": 2048,
+   "happy": 54,
+   "health": 0,
+   "phase": "dead"
+  }
+ ],
+ "notes": [
+  {
+   "age": 30,
+   "q": "x",
+   "a": "가족과 함께하는 시간이 가장 소중해요."
+  }
+ ]
+}
