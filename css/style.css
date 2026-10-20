@@ -102,9 +102,9 @@ textarea { margin-top: 14px; resize: vertical; }
 /* 인생 재생 */
 .replay { margin-top: 8px; }
 .rStage { position: relative; border-radius: 14px; overflow: hidden; background: #000; border: 1px solid var(--line); }
-.rStage canvas { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
-.rHud { position: absolute; left: 18px; top: 12px; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.7); display: flex; align-items: baseline; gap: 10px; }
-.rHud b { font-size: clamp(28px, 6vw, 52px); } .rHud span { color: #f2c879; font-size: 17px; }
+.rStage canvas { display: block; width: 100%; height: auto; aspect-ratio: 32 / 10; image-rendering: pixelated; image-rendering: crisp-edges; }
+.rHud { position: absolute; left: 14px; top: 8px; color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,.7); display: flex; align-items: baseline; gap: 10px; }
+.rHud b { font-size: clamp(22px, 4.6vw, 40px); } .rHud span { color: #f2c879; font-size: 17px; }
 .rCap { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; margin-top: 10px; min-height: 92px; }
 .rCap b { color: var(--accent); font-size: 18px; display: block; } .rCap small { color: var(--muted); display: block; font-size: 13px; }
 .rCap p { margin: 4px 0 0; font-size: 15.5px; }
